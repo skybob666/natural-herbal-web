@@ -85,7 +85,7 @@ window.CAO_DATA = {
       plantId: "rhodiola",
       title: "红景天：把高寒适应，读成研究线索",
       kicker: "植物护肤功效解读系列 1",
-      sourceLabel: "草肤荟公众号 · 植物科普资料",
+      sourceLabel: "项目内资料摘录 · 植物科普",
       source: "articleRhodiola",
       sourceNote: "课程展示版已将“高原人参”等传播性表达改为植物背景与研究线索，不把体外结果写成本产品功效。",
       image: "assets/images/plants/rhodiola.webp",
@@ -109,7 +109,7 @@ window.CAO_DATA = {
       plantId: "bidens",
       title: "三叶鬼针草与视黄醇：先比较证据，再谈替代",
       kicker: "植物抗衰新势力 · 对照阅读",
-      sourceLabel: "草肤荟公众号 · 植物科普资料",
+      sourceLabel: "项目内资料摘录 · 植物科普",
       source: "articleBidens",
       sourceNote: "课程展示版保留“对照阅读”，删除“天然替代视黄醇”和“安全性较高”等无法由现有资料直接支持的结论。",
       image: "assets/images/plants/bidens.webp",
@@ -132,8 +132,8 @@ window.CAO_DATA = {
       number: "03",
       plantId: "acmella",
       title: "千日菊：动态纹叙事，不能替代临床证据",
-      kicker: "植物云公众号 · 植物科普资料",
-      sourceLabel: "植物云公众号 · 植物科普资料",
+      kicker: "项目内资料摘录 · 植物科普",
+      sourceLabel: "项目内资料摘录 · 植物科普",
       source: "articleAcmella",
       sourceNote: "课程展示版保留动态纹这一问题意识，但将“植物肉毒素、5 分钟淡纹、放心使用”等营销式表述改为模型与证据边界。",
       image: "assets/images/plants/acmella.webp",
@@ -153,7 +153,7 @@ window.CAO_DATA = {
     }
   ],
   sources: {
-    formula: { label: "S01 · 草肤荟公众号发布的配方记录与包装照片", url: "assets/images/serum/package.webp" },
+    formula: { label: "S01 · 项目提供的配方记录与包装照片", url: "assets/images/serum/package.webp" },
     butylene: { label: "S04 · COSMILE Europe：Butylene Glycol", url: "https://cosmileeurope.eu/inci/detail/2015/butylene-glycol/" },
     ectoin: { label: "S05 · COSMILE Europe：Ectoin", url: "https://cosmileeurope.eu/inci/detail/5191/ectoin/" },
     panthenol: { label: "S06 · COSMILE Europe：Panthenol", url: "https://cosmileeurope.eu/inci/detail/10243/panthenol/" },
@@ -162,46 +162,46 @@ window.CAO_DATA = {
     bidensBotany: { label: "S09 · Kew POWO：Bidens pilosa L.（2026-11-03 查阅）", url: "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A32564-2/general-information" },
     acmellaBotany: { label: "S10 · Kew POWO：Acmella oleracea（2026-11-03 查阅）", url: "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A914778-1/general-information" },
     rhodiolaBotany: { label: "S11 · World Flora Online：Rhodiola rosea（2026-11-03 查阅）", url: "https://www.worldfloraonline.org/taxon/wfo-0000399342" },
-    articleRhodiola: { label: "S12 · 草肤荟公众号：红景天植物科普稿", url: "docs/科普内容与图片核对_v1.7_20261103.md" },
-    articleBidens: { label: "S13 · 草肤荟公众号：三叶鬼针草植物科普稿", url: "docs/科普内容与图片核对_v1.7_20261103.md" },
-    articleAcmella: { label: "S14 · 植物云公众号：千日菊植物科普稿", url: "docs/科普内容与图片核对_v1.7_20261103.md" }
+    articleRhodiola: { label: "S12 · 草肤荟公众号：红景天植物护肤功效解读", url: "https://mp.weixin.qq.com/s/nKg7ZkaeRh_Vqi2fl2JVhg" },
+    articleBidens: { label: "S13 · 草肤荟公众号：三叶鬼针草植物科普", url: "https://mp.weixin.qq.com/s/CQgqzE5M9VhfoZi9ogJlWQ" },
+    articleAcmella: { label: "S14 · 植物云公众号：千日菊植物科普", url: "https://mp.weixin.qq.com/s/pdHcMb2kJH4Q_fDoXJTFSw" }
   },
   ingredients: [
     { id: "water", name: "水", labelName: "水", english: "Water", position: 1 },
     {
-      id: "butylene-glycol", name: "丁二醇", labelName: "丁二醇", english: "Butylene Glycol", position: 2, featured: true, type: "hydration", alias: "保湿剂 · 溶剂", role: "一般用途：保湿、溶剂、皮肤调理",
+      id: "butylene-glycol", name: "丁二醇", labelName: "丁二醇", english: "Butylene Glycol", position: 2, expandable: true, type: "hydration", alias: "保湿剂 · 溶剂", role: "一般用途：保湿、溶剂、皮肤调理",
       what: "Butylene Glycol 是丁二醇的英文 INCI 名称。", generalRole: "常作为保湿、溶剂与皮肤调理成分使用，帮助原料在水相体系中分散并带来更轻盈的肤感。", evidence: "资料入口：COSMILE Europe 成分库。这里呈现的是它在化妆品配方中的常见角色。", hook: "保湿与溶剂，常见于水相精华。", source: "butylene"
     },
     {
-      id: "bidens-extract", name: "三叶鬼针草提取物", labelName: "三叶鬼针草（BIDENS PILOSA）提取物", english: "Bidens Pilosa Extract", position: 3, featured: true, type: "plant", alias: "植物提取物", role: "配方记录中的植物来源成分", plantId: "bidens",
+      id: "bidens-extract", name: "三叶鬼针草提取物", labelName: "三叶鬼针草（BIDENS PILOSA）提取物", english: "Bidens Pilosa Extract", position: 3, expandable: true, type: "plant", alias: "植物提取物", role: "配方记录中的植物来源成分", plantId: "bidens",
       what: "这是与三叶鬼针草（Bidens pilosa）对应的提取物 INCI 名称。", generalRole: "作为植物来源成分列入配方；植物图鉴中可继续阅读其形态、成分线索与研究观察。", evidence: "资料入口：包装成分记录与植物图鉴。", hook: "从植物名，读到成分表中的 INCI 名称。", source: "formula"
     },
     {
-      id: "ectoin", name: "四氢甲基嘧啶羧酸", labelName: "四氢甲基嘧啶羧酸", english: "Ectoin", position: 4, featured: true, type: "hydration", alias: "依克多因 · 皮肤调理", role: "一般用途：皮肤调理",
+      id: "ectoin", name: "四氢甲基嘧啶羧酸", labelName: "四氢甲基嘧啶羧酸", english: "Ectoin", position: 4, expandable: true, type: "hydration", alias: "依克多因 · 皮肤调理", role: "一般用途：皮肤调理",
       what: "四氢甲基嘧啶羧酸常被称为依克多因，英文名为 Ectoin。", generalRole: "在成分资料库中归为皮肤调理成分，常见于强调保湿与环境适应体验的护肤配方。", evidence: "资料入口：COSMILE Europe 成分库。", hook: "依克多因：一项皮肤调理成分。", source: "ectoin"
     },
     {
-      id: "acmella-extract", name: "千日菊提取物", labelName: "千日菊（ACMELLA OLERACEA）提取物", english: "Acmella Oleracea Extract", position: 5, featured: true, type: "plant", alias: "植物提取物", role: "配方记录中的植物来源成分", plantId: "acmella",
+      id: "acmella-extract", name: "千日菊提取物", labelName: "千日菊（ACMELLA OLERACEA）提取物", english: "Acmella Oleracea Extract", position: 5, expandable: true, type: "plant", alias: "植物提取物", role: "配方记录中的植物来源成分", plantId: "acmella",
       what: "这是与千日菊（Acmella oleracea）对应的提取物 INCI 名称。", generalRole: "作为植物来源成分列入配方；植物图鉴中可继续阅读千日菊的花序特征与烷基酰胺研究线索。", evidence: "资料入口：包装成分记录与植物图鉴。", hook: "从黄色花序，进入植物研究线索。", source: "formula"
     },
     { id: "ergothioneine", name: "麦角硫因", labelName: "麦角硫因", english: "Ergothioneine", position: 6 },
     { id: "alpha-arbutin", name: "α-熊果苷", labelName: "α-熊果苷", english: "Alpha-Arbutin", position: 7 },
     {
-      id: "panthenol", name: "泛醇", labelName: "泛醇", english: "Panthenol", position: 8, featured: true, type: "hydration", alias: "维生素 B5 前体", role: "一般用途：皮肤调理",
+      id: "panthenol", name: "泛醇", labelName: "泛醇", english: "Panthenol", position: 8, expandable: true, type: "hydration", alias: "维生素 B5 前体", role: "一般用途：皮肤调理",
       what: "Panthenol 的中文名是泛醇，常被称作维生素原 B5。", generalRole: "在成分资料库中归为皮肤调理成分；它是精华、乳霜和身体护理中常见的基础护理原料。", evidence: "资料入口：COSMILE Europe 成分库。", hook: "泛醇：基础护理配方里的常见名字。", source: "panthenol"
     },
     {
-      id: "rhodiola-extract", name: "红景天提取物", labelName: "红景天（RHODIOLA ROSEA）提取物", english: "Rhodiola Rosea Extract", position: 9, featured: true, type: "plant", alias: "植物提取物", role: "配方记录中的植物来源成分", plantId: "rhodiola",
+      id: "rhodiola-extract", name: "红景天提取物", labelName: "红景天（RHODIOLA ROSEA）提取物", english: "Rhodiola Rosea Extract", position: 9, expandable: true, type: "plant", alias: "植物提取物", role: "配方记录中的植物来源成分", plantId: "rhodiola",
       what: "这是与红景天（Rhodiola rosea）对应的提取物 INCI 名称。", generalRole: "作为植物来源成分列入配方；植物图鉴中可继续阅读红景天的生长环境、成分线索与相关研究方向。", evidence: "资料入口：包装成分记录与植物图鉴。", hook: "从高寒植物背景，读到配方中的植物名。", source: "formula"
     },
     { id: "matsutake", name: "松口蘑提取物", labelName: "松口蘑（TRICHOLOMA MATSUTAKE）提取物", english: "Tricholoma Matsutake Extract", position: 10 },
     { id: "white-truffle", name: "白松露菌提取物", labelName: "白松露菌（TUBER MAGNATUM）提取物", english: "Tuber Magnatum Extract", position: 11 },
     {
-      id: "sodium-hyaluronate", name: "透明质酸钠", labelName: "透明质酸钠", english: "Sodium Hyaluronate", position: 12, featured: true, type: "hydration", alias: "透明质酸的钠盐", role: "一般用途：保湿、皮肤调理",
+      id: "sodium-hyaluronate", name: "透明质酸钠", labelName: "透明质酸钠", english: "Sodium Hyaluronate", position: 12, expandable: true, type: "hydration", alias: "透明质酸的钠盐", role: "一般用途：保湿、皮肤调理",
       what: "Sodium Hyaluronate 是透明质酸的钠盐形式。", generalRole: "常作为保湿与皮肤调理成分使用，帮助配方形成清润、易延展的使用体验。", evidence: "资料入口：COSMILE Europe 成分库。", hook: "透明质酸的钠盐形式，常用于保湿体系。", source: "hyaluronate"
     },
     {
-      id: "hexanediol", name: "1,2-己二醇", labelName: "1,2-己二醇", english: "1,2-Hexanediol", position: 13, featured: true, type: "other", alias: "溶剂 · 皮肤调理", role: "一般用途：溶剂、皮肤调理",
+      id: "hexanediol", name: "1,2-己二醇", labelName: "1,2-己二醇", english: "1,2-Hexanediol", position: 13, expandable: true, type: "other", alias: "溶剂 · 皮肤调理", role: "一般用途：溶剂、皮肤调理",
       what: "1,2-己二醇是一种常见的二元醇类成分。", generalRole: "常作为溶剂与皮肤调理成分使用；它与相邻列出的对羟基苯乙酮，共同构成理解精华稳定体系的一条配方线索。", evidence: "水相精华的稳定通常由原料质量、生产卫生、pH、包装密封与配方辅助体系共同维持。1,2-己二醇与对羟基苯乙酮的组合，常出现在这类体系的阅读语境中。", hook: "精华稳定，来自多个环节共同协作。", source: "hexanediol"
     },
     { id: "hydroxyacetophenone", name: "对羟基苯乙酮", labelName: "对羟基苯乙酮", english: "Hydroxyacetophenone", position: 14 },

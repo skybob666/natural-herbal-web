@@ -50,6 +50,30 @@
     toggle.querySelector("span:last-child").textContent = willShow ? "↑" : "↓";
   }
 
+  function selectProductView(id) {
+    const allowed = ["essence", "cream"];
+    if (!allowed.includes(id)) return;
+    document.querySelectorAll("[data-product-view]").forEach(button => {
+      const active = button.dataset.productView === id;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-selected", String(active));
+    });
+    document.querySelectorAll("[data-product-content]").forEach(content => {
+      const active = content.dataset.productContent === id;
+      content.hidden = !active;
+      content.classList.toggle("is-product-focused", active);
+    });
+
+    const target = document.querySelector(`[data-product-content="${id}"]`);
+    if (target) {
+      target.scrollIntoView({ behavior: reduced.matches ? "auto" : "smooth", block: "start" });
+      if (id === "cream") {
+        const record = target.querySelector("#cream-record");
+        if (record) record.open = true;
+      }
+    }
+  }
+
   function showDialog() {
     if (!dialog || typeof dialog.showModal !== "function") return;
     const evidence = dialog.querySelector(".evidence-details");
@@ -62,7 +86,7 @@
   }
 
   function renderIngredient(item) {
-    if (!item || !item.featured) return;
+    if (!item || !item.expandable) return;
     currentItem = item;
     const source = sourceFor(item.source);
     const plant = plants.get(item.plantId);
@@ -97,7 +121,7 @@
   }
 
   function openItem(item, sourceElement, route) {
-    if (!item || !item.featured) return;
+    if (!item || !item.expandable) return;
     registerOpen(sourceElement, route);
     renderIngredient(item);
   }
@@ -153,6 +177,11 @@
   }
 
   document.addEventListener("click", event => {
+    const productView = event.target.closest("[data-product-view]");
+    if (productView) {
+      selectProductView(productView.dataset.productView);
+      return;
+    }
     const plantChoice = event.target.closest("[data-plant-select]");
     if (plantChoice) {
       selectPlant(plantChoice.dataset.plantSelect);
@@ -166,7 +195,7 @@
     const ingredient = event.target.closest("[data-ingredient-id]");
     if (ingredient) {
       const item = ingredients.get(ingredient.dataset.ingredientId);
-      if (!item?.featured) return;
+      if (!item?.expandable) return;
       event.preventDefault();
       openItem(item, ingredient, "#ingredient=" + item.id);
       return;
@@ -184,7 +213,7 @@
         button.classList.toggle("is-active", active);
         button.setAttribute("aria-pressed", String(active));
       });
-      text("filter-count", count + " 项重点解码");
+      text("filter-count", count + " 项可展开阅读");
     }
   });
 
