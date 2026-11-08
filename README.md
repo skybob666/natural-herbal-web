@@ -70,9 +70,9 @@ node scripts/build-static.cjs
 
 ## 发布到 GitHub Pages
 
-仓库地址：<https://github.com/skybob666/-sky>
+仓库地址：<https://github.com/skybob666/natural-herbal-web>
 
-将本目录内的网页文件、`assets/`、`3d/` 与 `.github/workflows/pages.yml` 一并更新到仓库根目录，再在 GitHub 的 **Actions** 页面确认部署任务显示绿色 `Success`。线上地址为：<https://skybob666.github.io/-sky/>。
+将本目录内的网页文件、`assets/`、`3d/` 与 `.github/workflows/pages.yml` 一并更新到仓库根目录，再在 GitHub 的 **Actions** 页面确认部署任务显示绿色 `Success`。线上地址为：<https://skybob666.github.io/natural-herbal-web/>。
 
 如果线上页面仍显示旧内容，可使用 `Ctrl + F5` 强制刷新浏览器缓存。
 
