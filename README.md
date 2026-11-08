@@ -47,6 +47,8 @@ py -m http.server 8137 --bind 127.0.0.1
 | `docs/` | 资料整理、内容核对与过程记录。 |
 | `.github/workflows/pages.yml` | GitHub Pages 发布流程。 |
 
+仓库根目录只保留当前线上版本运行所需的文件。课程过程资料按用途放在 `docs/releases/`、`docs/sources/` 和 `docs/process/`；早期根目录文件统一保存在 `docs/archive/previous-root/`，既保留迭代痕迹，也不会干扰网站发布。
+
 ## 修改内容后的同步方法
 
 植物、成分或产品信息优先在 `data.js` 中修改。修改后，在本目录运行：
@@ -68,16 +70,17 @@ node scripts/build-static.cjs
 
 ## 发布到 GitHub Pages
 
-仓库地址：<https://github.com/skybob666/natural-herbal-web>
+仓库地址：<https://github.com/skybob666/-sky>
 
-将本目录内的网页文件、`assets/`、`3d/` 与 `.github/workflows/pages.yml` 一并更新到仓库根目录，再在 GitHub 的 **Actions** 页面确认部署任务显示绿色 `Success`。线上地址为：<https://skybob666.github.io/natural-herbal-web/>。
+将本目录内的网页文件、`assets/`、`3d/` 与 `.github/workflows/pages.yml` 一并更新到仓库根目录，再在 GitHub 的 **Actions** 页面确认部署任务显示绿色 `Success`。线上地址为：<https://skybob666.github.io/-sky/>。
 
 如果线上页面仍显示旧内容，可使用 `Ctrl + F5` 强制刷新浏览器缓存。
 
 ## 更新记录
 
-- [发布更新记录 v1.17](发布更新记录_v1.17_20261107.md)
-- [发布更新记录 v1.16](发布更新记录_v1.16_20261105.md)
-- [发布更新记录 v1.15](发布更新记录_v1.15_20261105.md)
+- [v1.17 发布更新记录](docs/releases/发布更新记录_v1.17_20261107.md)
+- [v1.16 发布更新记录](docs/releases/发布更新记录_v1.16_20261105.md)
+- [文档目录说明](docs/README.md)
+- [v1.15 发布更新记录](docs/releases/发布更新记录_v1.15_20261105.md)
 
 本作品用于课程展示，产品图片与包装信息以当前收集的实物与资料为依据。

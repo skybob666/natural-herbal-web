@@ -15,4 +15,10 @@ main{min-height:790px;height:calc(100svh - 172px);max-height:1100px;position:rel
 @media(max-width:760px){.hotspots button{font-size:11px;min-height:44px}.hotspots button small{font-size:9px}.drag-hint{font-size:9px;letter-spacing:0}#material-dialog{padding:40px 24px 25px}#plant-note-image{width:120px;height:120px}}
 /* Dragging the model should never draw a yellow frame around the canvas. */
 #model-canvas:focus,#model-canvas:focus-visible,#model-canvas.is-dragging{outline:none;outline-offset:0;box-shadow:none;border:0}
+/* v1.5：核心交互控件保留 44px 触达面积。 */
+.return-link{display:inline-flex;align-items:center;min-height:44px}
+.reference button{min-height:44px;display:inline-flex;align-items:center}
+.download{display:inline-flex;align-items:center;min-height:44px}
+.hotspots button{min-height:44px}
+@media(max-width:760px){.side-controls button{width:44px;height:44px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
